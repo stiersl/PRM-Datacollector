@@ -10,7 +10,8 @@ import com.stevenstier.prm.model.HistorianValue;
 @Component
 public class RestHistorianValueDao implements HistorianValueDAO{
   //private static final String BASE_URL = "http://prm-test.herokuapp.com/api/variableHistory";
-  private static final String BASE_URL = "http://192.168.100.42:8080/prm/api/variableHistory/";
+  //private static final String BASE_URL = "http://192.168.100.42:8080/prm/api/variableHistory/";
+  private static final String BASE_URL = "http://localhost:8080/prm/api/variableHistory/";
   private RestTemplate restTemplate = new RestTemplate();
 
   @Override
