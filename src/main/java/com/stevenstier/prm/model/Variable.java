@@ -22,8 +22,8 @@ public class Variable {
 	private Double lastValueN;
 	private String lastValueS;
 	private Boolean lastValueB;
-	
- @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'hh:mm:ss.SSSXXX")
+
+	@JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'hh:mm:ss.SSSXXX")
 	private LocalDateTime lastSampleTime;
 	private Integer lastQuality;
 	private Boolean active;
@@ -189,11 +189,12 @@ public class Variable {
 		return Objects.equals(varId, other.varId) && Objects.equals(varName, other.varName);
 	}
 
-  @Override
-  public String toString() {
-    return "Variable [varId=" + varId + ", varName=" + varName + ", varDesc=" + varDesc + ", varType=" + varType
-        + ", engUnits=" + engUnits + ", precison=" + precison + ", maxScale=" + maxScale + ", minScale=" + minScale
-        + ", snapshotRate=" + snapshotRate + ", snapshotTreshold=" + snapshotTreshold + ", active=" + active + "]";
-  }
+	@Override
+	public String toString() {
+		return "Variable [varId=" + varId + ", varName=" + varName + ", varDesc=" + varDesc + ", varType=" + varType
+				+ ", engUnits=" + engUnits + ", precison=" + precison + ", maxScale=" + maxScale + ", minScale="
+				+ minScale + ", snapshotRate=" + snapshotRate + ", snapshotTreshold=" + snapshotTreshold + ", active="
+				+ active + "]";
+	}
 
 }

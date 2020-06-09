@@ -7,5 +7,5 @@ import org.springframework.http.HttpStatus;
 
 public interface HistorianValueDAO {
 
-  public boolean insertHistorianValue(long varId, Instant sampletime, Double varValue, int Quality);
+	public boolean insertHistorianValue(long varId, Instant sampletime, Double varValue, int Quality);
 }

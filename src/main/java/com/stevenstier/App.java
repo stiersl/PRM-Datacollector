@@ -8,20 +8,20 @@ import com.stevenstier.model.Dao.RestHistorianValueDao;
 
 public class App {
 
-  public static void main(String[] args) {
-    HistorianValueDAO historianValueDAO = new RestHistorianValueDao();
-    
-    long varId = 2;
+	public static void main(String[] args) {
+		HistorianValueDAO historianValueDAO = new RestHistorianValueDao();
 
-    // Get the current time
-    Instant sampletime = Instant.now();
-    System.out.println(sampletime);
-    
-    Double varValue = 99.123d;
-    int Quality = 192;
-    
-    historianValueDAO.insertHistorianValue(varId, sampletime, varValue, Quality);
+		long varId = 2;
 
-  }
+		// Get the current time
+		Instant sampletime = Instant.now();
+		System.out.println(sampletime);
+
+		Double varValue = 69.42d;
+		int Quality = 192;
+
+		historianValueDAO.insertHistorianValue(varId, sampletime, varValue, Quality);
+
+	}
 
 }
